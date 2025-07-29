@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header id="header-geral">
+      <h1>Flexbox</h1>
+      <nav id="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="propriedadeContainer.html">Propriedade do container</a>
+        <a href="propriedadeItem.html">Propriedade do item</a>
+      </nav>
+    </header>
+
+    <main id="main-index">
+      <section>
+        <h2>O que é Flexbox?</h2>
+        <p>
+          Flexbox, ou Modelo de Layout Flexível, é uma ferramenta do CSS3 que
+          facilita a organização, o alinhamento e a distribuição de espaço entre
+          os elementos dentro de um container. Ele foi criado para substituir o
+          uso excessivo de floats e posicionamentos manuais, tornando o layout
+          mais responsivo e fácil de ajustar.
+        </p>
+        <p>
+          Ao aplicar <code>display: flex</code> em um elemento pai, todos os
+          seus filhos se tornam "itens flexíveis", podendo ser manipulados com
+          diversas propriedades que controlam sua direção, tamanho, espaçamento
+          e alinhamento.
+        </p>
+      </section>
+
+      <section>
+        <h2>Como funciona?</h2>
+        <p>O Flexbox trabalha com dois eixos:</p>
+        <ul>
+          <li>
+            <strong>Eixo principal (main axis):</strong> é a direção em que os
+            itens são posicionados (horizontal por padrão).
+          </li>
+          <li>
+            <strong>Eixo cruzado (cross axis):</strong> é o eixo perpendicular
+            ao eixo principal (vertical por padrão).
+          </li>
+        </ul>
+        <p>
+          As propriedades são divididas em dois grupos: as que atuam no
+          <strong>container</strong> (elemento pai), e as que atuam nos
+          <strong>itens</strong> (elementos filhos). Use o menu acima para ver
+          cada uma em detalhes.
+        </p>
+      </section>
+
+      <section>
+        <h2>Por que usar Flexbox?</h2>
+        <ul>
+          <li>
+            Facilita o alinhamento de elementos horizontal e verticalmente.
+          </li>
+          <li>Permite criar layouts responsivos com menos código.</li>
+          <li>Evita soluções antigas como floats e posicionamento absoluto.</li>
+          <li>Adapta automaticamente o conteúdo ao espaço disponível.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Tipos de Alinhamento no Flexbox</h2>
+
+        <h3>🔹 Propriedades de Alinhamento do Container</h3>
+
+        <h4><code>justify-content</code> (alinha no eixo principal):</h4>
+        <ul>
+          <li><strong>flex-start</strong> – Alinha os itens ao início.</li>
+          <li><strong>flex-end</strong> – Alinha os itens ao final.</li>
+          <li><strong>center</strong> – Centraliza os itens.</li>
+          <li>
+            <strong>space-between</strong> – Espaço igual entre os itens, sem
+            margem nas extremidades.
+          </li>
+          <li>
+            <strong>space-around</strong> – Espaço ao redor dos itens (metade
+            nas extremidades).
+          </li>
+          <li>
+            <strong>space-evenly</strong> – Espaço igual entre todos os itens e
+            bordas.
+          </li>
+        </ul>
+
+        <h4><code>align-items</code> (alinha no eixo cruzado):</h4>
+        <ul>
+          <li>
+            <strong>stretch</strong> – (padrão) Estica os itens para ocupar o
+            espaço do eixo cruzado.
+          </li>
+          <li>
+            <strong>flex-start</strong> – Alinha os itens ao topo (ou esquerda,
+            dependendo da direção).
+          </li>
+          <li>
+            <strong>flex-end</strong> – Alinha os itens à base (ou direita).
+          </li>
+          <li>
+            <strong>center</strong> – Centraliza os itens no eixo cruzado.
+          </li>
+          <li>
+            <strong>baseline</strong> – Alinha os itens com base na linha de
+            base do texto.
+          </li>
+        </ul>
+
+        <h4><code>align-content</code> (quando há múltiplas linhas):</h4>
+        <ul>
+          <li>
+            <strong>flex-start</strong> – Agrupa as linhas no topo do container.
+          </li>
+          <li>
+            <strong>flex-end</strong> – Agrupa as linhas na parte inferior.
+          </li>
+          <li><strong>center</strong> – Centraliza as linhas verticalmente.</li>
+          <li><strong>space-between</strong> – Espaço entre as linhas.</li>
+          <li><strong>space-around</strong> – Espaço ao redor das linhas.</li>
+          <li>
+            <strong>stretch</strong> – (padrão) Estica as linhas para preencher
+            o espaço.
+          </li>
+        </ul>
+
+        <h3>🔹 Propriedade de Alinhamento dos Itens</h3>
+
+        <h4><code>align-self</code> (alinha um único item):</h4>
+        <ul>
+          <li>
+            <strong>auto</strong> – Herda o valor do <code>align-items</code>.
+          </li>
+          <li><strong>flex-start</strong> – Alinha o item ao topo.</li>
+          <li><strong>flex-end</strong> – Alinha o item ao final.</li>
+          <li><strong>center</strong> – Centraliza o item.</li>
+          <li><strong>baseline</strong> – Alinha pela linha de base.</li>
+          <li>
+            <strong>stretch</strong> – Estica o item para ocupar o espaço
+            disponível.
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
