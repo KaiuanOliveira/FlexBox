@@ -62,6 +62,7 @@
   border: 2px solid gray;
   background-color: #fff;
   border-radius: 6px;
+  justify-content: center;
 }
 .item-2 {
   padding: 2rem;
